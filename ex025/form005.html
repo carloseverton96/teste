@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <!--atenção ao checkbox, da forma que está configurado se clicar no nome seleciona o quadrado.
+    atenção ao radio check, para que o name esteja igual, opara que selecione apenas um. pode ser inserido um checked para já iniciar a aplicação com uma marcação-->
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+    <h1> Exemplo de formulário</h1>
+    <fieldset>
+        <Legend>Sexo</Legend>
+    <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+    <input type="radio" name="sexo" id="isxfem"  value="F"> <label for="isxfem">Feminino</label>
+
+
+    </fieldset>
+
+
+
+<fieldset>
+<legend>Esporte favorito</legend>
+<label for="iesbas"><input type="checkbox" name="esbas" id="iesbas" checked>Basquete</label>
+<label for="iesfut"><input type="checkbox" name="esfut" id="iesfut">futebol</label>
+<input type="checkbox" name="esnat" id="iesnat">natação
+<input type="checkbox" name="esten" id="iesten">tenis
+
+<p><label for="icor">Cor</label>
+<input type="color" name="cor" id="icor"></p>
+
+<p>
+    <label for="inivel">Nível de satisfação</label>
+    <input type="range" name="nivel" id="inivel" min="1" max="5" value="3">
+</p>
+
+<!--input:file é para o usuário carrgar imagem o input:image é mais voltado ao desenvolvedor ou dono do site.
+quando utilizar o envio de arquivos utilize o methodo post e não o get-->
+<p>
+    <label for="ifoto">Foto do perfil</label>
+    <input type="file" name="foto" id="ifoto">
+</p>
+
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+
+
+</form>
+</body>
+</html>

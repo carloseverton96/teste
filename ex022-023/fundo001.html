@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+
+<style>
+    body{
+        background-image: url('imagens-cap19/wallpaper001.jpg');
+    }
+    div.quadrado{
+        display: inline-block;
+        border-radius: 10px;
+        background-color: lightgray;
+        border: 1px solid black;
+    width: 300px;
+    height: 300px;}
+div#q1{
+    background-color: skyblue;
+}
+div#q2{
+    background-color: linear-gradient(to bottom, yellow, red);
+}
+div#q3{
+    background-color: url('imagens-cap19/pattern003.png');
+}
+table{
+    border-collapse: collapse;
+    border: 5 px solid black;
+    width: 400PX;
+    padding: 8PX;
+}
+tr{
+    border: 5 px solid black;
+    padding: 1px;
+}
+td{
+    border: 5 px solid rgb(66, 6, 231);
+    padding: 1px;
+}
+
+  
+
+
+
+
+</style>
+
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+
+    /* Hierarquia de tabela (simples)
+    table = tabela
+        table head = cabeçalho de tabela data = dados de tabela
+    */
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>

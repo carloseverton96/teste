@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou sisplesmente aumente e diminua o tamanho so seu navegador</p>
+    <p>A parte "source" tem que ser escrita manualmente, a ordem importa</p>
+
+    <picture>
+        <source media="(min-width: 750px)" srcset="imagens/foto_g.png" type="image/png">
+        <source media="(min-width: 750px)" srcset="imagens/foto_m.png" type="image/png">
+
+        
+        <img src="imagens/foto_p.png" alt="imagem fléxível">
+            </picture>
+    <h1>Vamos aprender a reproduzir aúdio</h1>
+    <audio src="mida/happy-mistake.mp3" conrols autoplay></audio>
+    <p>A maneira que deu certo:</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="mida/happy-mistake.mp3" type="audio/mpeg">
+        <source src="mida/happy-mistake.ogg" type="audio/ogg">
+        <source src="mida/happy-mistake.wav" type="audio/wav">
+<p>por que tem tem três escritas, pq o navegador vai tentar carregar os três tipos de arquivos ante de mostrar um mensagem alternativa.</p>
+<href="mida/happy-mistake.wav">Clique aqui para baixar o arquivo</href>
+    </audio>
+    <p>Handbrake aplicativo para converter vídeos.</p>
+</body>
+</html>

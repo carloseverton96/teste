@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+    border-collapse: collapse;
+    border: 15 px solid black;
+    width: 400PX;
+    height: 400px;
+    padding: 8PX;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+thead, tfoot{
+    background-color: blueviolet;
+    color: rgb(85, 59, 10);
+}
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(73, 4, 4);
+}
+tbody > tr:nth-child(2n){
+    background-color: lightgrey;
+}
+
+    </style>
+</head>
+<body>
+    <table>
+        <!--anatomia para tabelas grandes 
+        Thead - tr, td, td, th
+        Tbody - tr, td, td, th
+        Tfoot - tr, td, td, th
+        tbody > tr:nth-child(2n)
+        tbody > tr:nth-child(odd)
+        tbody > tr:nth-child(even)
+        th - cabeçalho
+        td - dado
+        scope de linh/coluna
+    -->
+
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+<caption>População das unidades federativas</caption>
+    <table>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+        </thead>
+        <tbody>
+            <td>são paulo</td>
+            <td>49.351.1523</td>
+            <tr>
+                <td>rio de janeiro</td>
+                <td>97.351.523</td>
+            </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><th>total de habitantes</th>
+                        <th>0000</th></tr>
+                    </tfoot>
+    </table>
+</body>
+</html>
