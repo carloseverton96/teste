@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*
-phones: até 600px
-tablets: 600px até 768px
+pequenas telas: até 600px
+celulares: 600px até 768px
+tablets: 768px até 992px
 desktops: 992px - 1200px
 grandes telas: acima de 1200px
 */
@@ -14,8 +15,9 @@ grandes telas: acima de 1200px
         display: block;
     }
     menu ul li {
-        display: inline-block
+        display: inline-block;
     }
+    
     main {
     width: 768px;
 }
